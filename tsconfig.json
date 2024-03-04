@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "./dist",
+    "lib": ["es2019", "es2020.promise", "es2020.bigint", "es2020.string"],
+    "module": "commonjs",
+    "target": "es2019",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "paths": {
+      "@src/*": ["./src/*"]
+    },
+    "sourceMap": true,
+    "skipLibCheck": true
+  },
+  "include": ["./src/**/*", "./src/core/languages/**/*.json"]
+}
